@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(form)}}
+        {{ form_row(form.bar) }}
+        {{ form_row(form.price) }}
+        
+    <div class="mb-3">
+        <button class="btn btn-success" type="submit">Edit</button>
+    </div>
+
+    {{ form_end(form) }}
+{% endblock %}
