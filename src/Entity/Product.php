@@ -16,9 +16,11 @@ class Product
     #[Regex('/^[a-zA-Z]?$/')]
     private string $description;
 
+	#[ORM\Column(unique: true)]
     #[Regex('/^\d-?$/')]
     private string $code;
 
+	#[ORM\Column(unique: true)]
     #[Regex('/^\w$/')]
     private string $slug;
 
